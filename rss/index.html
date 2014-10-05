@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[El aprendiz del game design]]></title><description><![CDATA[Conceptos e ideas sobre diseño de juegos y pixel art. ]]></description><link>http://trodz.github.io/</link><generator>Ghost 0.5</generator><lastBuildDate>Sun, 05 Oct 2014 05:07:34 GMT</lastBuildDate><atom:link href="http://trodz.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Esqueleto básico de un juego (Java)]]></title><description><![CDATA[<blockquote>
+  <p>Los siguientes ejemplos expuestos no son más que ideas propias durante un muy pequeño transcurso del desarrollo de juegos en Java SE, por lo que espero comprendan que no estaré creando el mejor esqueleto, sino que el propósito es ayudar a visualizar uno. </p>
+</blockquote>
+
+<p>En Java existen diferentes posibilidades de crear aplicaciones. Tenemos el uso del <strong>JFrame, JPanel y Applet, Canvas</strong> para crear nuestro esqueleto. Una applet se enfoca en poder utilizar la aplicación via web, los demás tienen el propósito de ser un ejecutable de java (<strong>.jar</strong>).</p>
+
+<p>A continuación presentaré un esqueleto básico con un <strong>JPanel</strong> y luego iré explicando sus huesos:</p>
+
+<pre><code class="language-java">import javax.swing.*;  
+import java.awt.*;  
+import java.awt.event.KeyEvent;  
+import java.awt.event.KeyListener;
+
+public class Esqueleto extends JPanel implements Runnable, KeyListener {
+
+
+    static final int ancho = 400, alto = 300, escala = 2;
+    // Imagenes por segundo deseadas
+    private int FPS = 60;
+    // Transformamos 60 segundos a milisegundos:
+    private long tiempoDeseado = 1000 / FPS;
+    // hilo que correra en run()
+    private Thread thread;
+    private boolean corriendo = false;
+
+    public Esqueleto() {
+        new Cerebro(ancho * escala, alto * escala, "Esqueleto en Java", this);
+        setFocusable(true);
+        addKeyListener(this);
+        requestFocus();
+    }
+
+    public static void main(String[] arg) {
+        new Esqueleto();
+    }
+
+    //Game loop (bucle infinito)
+    @Override
+    public void run() {
+
+        while (running) {
+            // métodos a repetir aquí
+            repaint();
+
+
+            // Estrategia de búfer
+            long inicio, tiempoTranscurrido, espera;
+
+            inicio = System.nanoTime();
+
+            tiempoTranscurrido = System.nanoTime() - inicio;
+
+            espera = tiempoDeseado - tiempoTranscurrido / 1000000;
+
+            if (espera &lt; 0) espera = 5;
+
+            try {
+                Thread.sleep(espera);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } // Fin del bucle infinito
+    }
+
+    public synchronized void iniciar() {
+        if (running) return;
+        if (thread == null) {
+            thread = new Thread(this);
+            thread.start();
+            running = true;
+        }
+    }
+
+    void paint(Graphics g) {
+        super.paint(g);
+        // Contenido a dibujar
+
+    }
+
+    Override
+    public void keyPressed(KeyEvent e) {
+        // Escucha cuando un evento (tecla) es presionado.
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        // Esto escucha cuando un evento deja de ser presionado
+
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+          // Similar a KeyPressed. Pero para los juegos es mejor usar KeyPressed.
+
+    }
+
+} // Fin de la clase Esqueleto
+
+
+
+/* Tendremos otra clase que se encargará de crear nuestra ventana mediante un constructor a gusto propio. */
+
+class Cerebro {
+
+    public Cerebro(int ancho, int alto, String tituloDeVentana, Esqueleto esqueleto) {
+
+        JFrame ventana = new JFrame(tituloDeVentana);
+        ventana.setPreferredSize(new Dimension(ancho, alto));
+        ventana.setMaximumSize(new Dimension(ancho,   alto));
+        ventana.setMinimumSize(new Dimension(ancho,   alto));
+        ventana.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
+        ventana.setLocationRelativeTo(null);
+        ventana.add(esqueleto);
+        ventana.setVisible(true);
+        esqueleto.iniciar();
+
+    }
+
+}
+</code></pre>
+
+<h2 id="explicandoelcdigo">Explicando el código</h2>
+
+<pre><code>import javax.swing.*;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+</code></pre>
+
+<p>Aquí simplemente se importan las librerías que planeamos usar en nuestro código y varían dependiendo de nuestras necesidades.</p>
+
+<pre><code>public class Esqueleto extends JPanel implements Runnable, KeyListener {  }
+</code></pre>
+
+<p>Declaramos nuestra clase y extendemos la clase JPanel. Ya que una clase es un molde para un objeto, una superclase es un molde para clases (En nuestro caso es el <strong>JPanel</strong>).</p>
+
+<pre><code>public class automovil {
+
+    int llantas = 4;
+    int precio = 40500;
+    String motor = "2.4L 201hp";
+    int luces = 4;
+    boolean prendido = false;
+
+}
+
+public class HondaCivic extends automovil {
+
+    String color = "negro";
+    String rines = "de fábrica";
+
+}
+</code></pre>
+
+<p>Ahora nuestro HondaCivic tendrá todas las propiedades y métodos de la clase Automóvil, significando esto que podrán ser usadas por nuestro HondaCivic cuando queramos.</p>
+
+<p>Luego del <strong>extends JPanel</strong> tenemos <strong>implements Runnable, KeyListener</strong>. Aquí estamos implementando dos interfaces: <strong>Runnable y KeyListener</strong>. Una interfaz es una colección de métodos abstractos Cuando implementamos interfaces debemos pensar en una especie de acuerdo entre nuestra clase y las interfaces. Este acuerdo va de la siguiente manera: <br />
+Runnable y KeyListener le dicen a esqueleto "Hey, puedes utilizarnos si haces lo que te ordenemos, y esto es que utilices nuestros métodos". Entonces, cuando implementemos una interfaz <strong>debemos</strong> generar sus métodos, sino nuestro programa <strong>no funcionará</strong>.</p>
+
+<pre><code>static final int ancho = 400, alto = 300, escala = 2;
+private int FPS = 60;
+private long tiempoDeseado = 1000 / FPS;
+private Thread thread;
+</code></pre>
+
+<p>Esta es una simple declaración de atributos. <strong>ancho, alto y escala</strong> determinarán las dimensiones de nuestra ventana. <strong>FPS</strong> son la cantidad de imágenes por segundo que queremos que nuestro juego muestre. <strong>tiempoDeseado</strong> es una conversión de FPS a milisegundos. El <strong>thread</strong> es la creación de nuestro proceso de ejecución (implementado por <strong>Runnable</strong>).</p>
+
+<pre><code>public Esqueleto() {
+    super();
+    setPreferredSize(new Dimension(ancho * escala, alto * escala));
+    setFocusable(true);
+    requestFocus();
+}
+</code></pre>
+
+<p>Estamos llamando al constructor de nuestra clase Esqueleto. En Java, un constructor inicializa nuestro objeto con instrucciones que le damos ahí. Por default, si no tenemos un constructor, Java lo crea cuando interpreta el programa y lo construye sin ninguna variable dentro. Otro dato, pueden haber más de 2 constructores para cualquier clase, y veremos diferentes tipos en mi próximo tutorial.</p>
+
+<ul>
+<li><p><strong>super()</strong>: Aquí llamados al método de nuestra clase para generar un JPanel con doble búfer y un diseño de flujo optimizado.</p></li>
+<li><p><strong>setPreferredSize(new Dimension(ancho * escala, alto * escala));</strong> Creamos un tamaño con nuevas dimensiones y las especificamos a nuestro gusto multiplicadas por una escala. ¿Por qué la escala? Pues, si nuestra ventana tiene dimensiones de <strong>800x600</strong> correrá con menor rendimiento que una de <strong>400(2)x300(2)</strong>.</p></li>
+<li><strong>setFocusable();</strong> determina el estado de enfoque para este componente, o sea que apenas nuestro juego empieze, llamará la atención de la computadora para que esta le preste la atención solicitada . </li>
+<li><p><strong>requestFocus();</strong> habilita la comunicación entre la entrada y nuestra ventana (Sin este método no captará eventos. </p>
+
+<pre><code>public static void main(String[] arg) {
+    JFrame frame = new JFrame("Esqueleto");
+    frame.add(new Esqueleto());
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.pack();
+    frame.setLocationRelativeTo(null);
+    frame.setResizable(false);
+    frame.setVisible(true);
+}
+</code></pre></li>
+</ul>
+
+<p>Creamos el método <strong>main</strong> y un <strong>JFrame</strong> como el siguiente:</p>
+
+<ul>
+<li><p><strong>frame.add(new Esqueleto());</strong> Creamos a nuestro esqueleto dentro de la frame. Va a realizar todo lo que el esqueleto hace. 
+<strong>IMPORTANTE</strong>: si llegaramos a meter nuestro método principal en otra clase, debemos remplazar <strong>frame.add(new clase());</strong> por <strong>frame.setContentPane(new claseConMetodoMain());</strong></p></li>
+<li><p><strong>frame.setDefaultCloseOperations(JFrame.EXIT_ ON_CLOSE);</strong> Indicamos que nuestra ventana tendrá una operación para cerrarla determinada, y es cuando le demos a la X para cerrar.</p></li>
+<li><p><strong>frame.pack();</strong> Esta instrucción agarra el constructor del esqueleto y revisa sus instrucciones. Una vez las toma, especifíca las dimensiones que le hemos dado, junto con el setFocusable() y el requestFocus().</p></li>
+<li><p><strong>frame.setLocationRelativeTo(null);</strong> Aquí le decimos a Java que, con nuestras dimensiones ya dadas, asigne una posición relativa entre nuestra ventana y monitor. el parámetro <strong>null</strong> simplemente indica que estará en la mitad tanto para ancho como alto.</p></li>
+<li><p><strong>frame.setResizable(false);</strong> Esta instrucción indica que NO queremos que las dimensiones de nuestra ventana sean alteradas por el usuario, ya que causaría muchos problemas.</p></li>
+<li><p><strong>frame.setVisible(true);</strong> Hace que nuestra pantalla sea visible.</p></li>
+</ul>
+
+<p>La parte del bucle infinito es explicada más a fondo en <a href='http://timrodriguez.ghost.io/estrategia-de-bufer/' >este</a> post.</p>]]></description><link>http://trodz.github.io/creando-el-esqueleto-de-un-juego-en-java-2/</link><guid isPermaLink="false">4a6a4325-6de0-48bb-8eb6-ff33bacaaf8c</guid><dc:creator><![CDATA[Juan Alejandro Rodríguez Morais]]></dc:creator><pubDate>Wed, 03 Sep 2014 16:23:44 GMT</pubDate></item><item><title><![CDATA[Creando una estrategia de búfer para un simple juego (Java)]]></title><description><![CDATA[<p>Cuando decidí portear un juego de Mac a Windows me di cuenta que mi estrategia de búfer estaba horrible; a medida que la pantalla actualizaba, muchas imagenes eran omitidas por lo que la pantalla se hacía negra la mayoría del tiempo. <strong>Nadie quiere jugar un juego mal optimizado.</strong> Así que decidí investigar sobre una estrategia para manejar nuestro proceso(Thread) con eficiencia.</p>
+
+<p>Cuando el juego inicia, habrán 4 variables de tipo long: <strong>inicio, tiempoTranscurrido, espera, tiempoDeseado</strong> y una de tipo entero: <strong>FPS</strong> (fotogramas por segundo o frames per second).</p>
+
+<p><strong>FPS:</strong> La visión humana es actualizada con una frecuencia de 60 Hz. Sin embargo, cuando vemos un monitor/televisión, existe un umbral de visión en el cual se da una interrupción de 16 milisegundos entre nuestros ojos y el aparto que produzca imágenes, razón por la cual lo ideal sería que nuestro juego se actualizara a esta frecuencia para que no haya interrupciones indeseadas. </p>
+
+<pre><code>tiempoDeseado = 1000 / FPS 
+</code></pre>
+
+<p>Esto nos da 16.667 (el tiempo aproximado de interrupción del umbral).</p>
+
+<p>inicio calculará el tiempo del sistema en nanosegundos por medio de:</p>
+
+<pre><code>inicio = System.nanoTime(); 
+</code></pre>
+
+<p>tiempoTranscurrido restará el tiempo actual menos el tiempo de inicio, para ir controlando qué es lo que pasa:</p>
+
+<pre><code>tiempoTranscurrido = System.nanoTime() - inicio;
+</code></pre>
+
+<p>y por último espera restará nuestro tiempo deseado menos el tiempo transcurrido. Como este se da en nano segundos, haremos la conversión de nano a mili (entre 1000000):</p>
+
+<pre><code>espera = tiempoDeseado - tiempoTranscurrido / 1000000;
+</code></pre>
+
+<p>Esta divisón nos da un resultado de 16 redondeado porque una variable de tipo <strong>long</strong> no presenta decimales. Si quieres comprobarlo, una impresión a la consola nos va a imprimir 16: </p>
+
+<pre><code>System.out.println(espera);
+</code></pre>
+
+<p>Ahora… falta algo para que sea failproof (a prueba de fallos). Si por alguna razón, nuestro tiempo de espera llegara a bajar sobre 0, ya sea porque nuestra computadora está teniendo problemas y/o empieza a colgarse, daremos un valor arbitrario a espera de 5:</p>
+
+<pre><code>    if (espera &lt; 0) espera = 5; 
+</code></pre>
+
+<h2 id="nuestrocdigodeberaverseas">Nuestro código debería verse así:</h2>
+
+<pre><code>// Atributos privados
+private int FPS = 60;
+private long tiempoDeseado = 1000 / FPS;
+
+// podemos llamarle como queramos a nuestro game loop, aunque dependerá cómo estemos trabajando
+public void run() {
+
+    while (true) // Correrá por siempre
+
+    long inicio, tiempoTranscurrido, espera;
+
+    inicio = System.nanoTime(); 
+
+    tiempoTranscurrido = System.nanoTime() - inicio;
+
+    espera = tiempoDeseado - tiempoTranscurrido / 1000000;
+
+    if (espera &lt; 0) espera = 5;
+
+    System.out.println(espera);
+
+    try {
+        Thread.sleep(espera);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+</code></pre>
+
+<p>La ultima parte del código (<strong>try</strong>, <strong>catch</strong>) va ligado a un manejo de excepciones, que simplemente se encarga de revisar que todo esté bien, de lo contrario nos informará en qué lineas de nuestro código, mediante el <strong>printStackTrace()</strong>, se encuentra nuestro error.</p>
+
+<p>Esta estrategia es más que suficiente para un juego 2D con bajos recursos (Al menos en Java). Espero que les haya servido mi idea. Si tienes preguntas, dudas o algo que quieras implementar deja tu comentario abajo!</p>]]></description><link>http://trodz.github.io/estrategia-de-bufer/</link><guid isPermaLink="false">cc1f8634-d26e-43c0-8413-58bec44994a8</guid><dc:creator><![CDATA[Juan Alejandro Rodríguez Morais]]></dc:creator><pubDate>Wed, 03 Sep 2014 02:25:28 GMT</pubDate></item></channel></rss>
