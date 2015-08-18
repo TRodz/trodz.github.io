@@ -21,7 +21,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
-    
+
     <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -49,7 +49,7 @@
 
         jQuery(document).ready(function ($) {
             var options = {
-                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
                 $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
                 $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
                 $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
@@ -123,99 +123,94 @@
             </div>
         </div>
     </nav>
-    
-    <section class="main-section paddind">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 ">
-                    <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                        <!-- Jssor Slider Begin -->
-                        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-                        <div id="slider1_container" class="center-block text-center" style="position: relative; width: 1111px;
-                            height: 650px; overflow: hidden;">
-        
-                            <!-- Slides Container -->
-                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1082px; height: 650px;
-                                overflow: hidden;">
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/1.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/1.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/2.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/2.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/3.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/3.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/4.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/4.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/5.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/5.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/6.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/6.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/7.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/7.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/8.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/8.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="../../img/portfolio/luxor/9.jpg" />
-                                    <img u="thumb" src="../../img/portfolio/luxor/9.jpg" />
-                                </div>
-                            </div>
-                            <!--#region Thumbnail Navigator Skin Begin -->
-                            <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
-                            
-                            <!-- thumbnail navigator container -->
-                            <div u="thumbnavigator" class="jssort07" style="width: 1111px; height: 100px; left: 0px; bottom: 0px;">
-                                <!-- Thumbnail Item Skin Begin -->
-                                <div u="slides" style="cursor: default;">
-                                    <div u="prototype" class="p">
-                                        <div u="thumbnailtemplate" class="i"></div>
-                                        <div class="o"></div>
-                                    </div>
-                                </div>
-                                <!-- Thumbnail Item Skin End -->
-                                <!--#region Arrow Navigator Skin Begin -->
-                                <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
-                                <style>
-                                    
-                                </style>
-                                <!-- Arrow Left -->
-                                <span u="arrowleft" class="jssora11l" style="top: 123px; left: 20px;">
-                                </span>
-                                <!-- Arrow Right -->
-                                <span u="arrowright" class="jssora11r" style="top: 123px; right: 60px;">
-                                </span>
-                                <!--#endregion Arrow Navigator Skin End -->
-                            </div>
-                        </div>
-                        <!-- Jssor Slider End -->
-                        
-                        <!-- DESCRIPCION -->
-                        
-                        <h2 >Luxor Tower</h2>
-                        <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                        <p>En un terreno de 3,000.00 m2 esquinero, donde existen árboles de 60 m de altura que bordean la propiedad, se ha planteado este proyecto que procura no solo salvar la vegetación, también intenta con éxito sumar los méritos de ese ambiente para que el proyecto habitacional se vea beneficiado haciéndolo diferente al común de la oferta de la ciudad. Cerca de 1000.00 m2 de área del terreno siguen siendo verdes con grama natural mientras que el resto es la huella de esta estructura que se enfrenta sin temor ni timidez a la vista de la ciudad de Panamá.
-                        135 apartamentos en más de 10 topologías se ofrecen y la fachada no demuestra esa variedad inusual en sus plantas.
-                        La calle sigue siendo la misma luego de su construcción.</p>
-                    </div>
-                </div>
+
+    <!-- Project Details Go Here -->
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. -->
+    <div id="slider1_container" class="center-block text-center" style="position: relative; width: 1000px;
+        height: 650px; overflow: hidden;">
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 650px;
+            overflow: hidden;">
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/1.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/1.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/2.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/2.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/3.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/3.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/4.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/4.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/5.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/5.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/6.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/6.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/7.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/7.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/8.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/8.jpg" />
+            </div>
+            <div>
+                <img u="image" src="../../img/portfolio/luxor/9.jpg" />
+                <img u="thumb" src="../../img/portfolio/luxor/9.jpg" />
             </div>
         </div>
-    </section>
+        <!--#region Thumbnail Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
+
+        <!-- thumbnail navigator container -->
+        <div u="thumbnavigator" class="jssort07" style="width: 1000px; height: 100px; left: 0px; bottom: 0px;">
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides" style="cursor: default;">
+                <div u="prototype" class="p">
+                    <div u="thumbnailtemplate" class="i"></div>
+                    <div class="o"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+            <style>
+
+            </style>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 20px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora11r" style="top: 123px; right: 60px;">
+            </span>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
+    </div>
+    <!-- Jssor Slider End -->
+    <!-- DESCRIPCION -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 >Luxor Tower</h2>
+                <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                <p>En un terreno de 3,000.00 m2 esquinero, donde existen árboles de 60 m de altura que bordean la propiedad, se ha planteado este proyecto que procura no solo salvar la vegetación, también intenta con éxito sumar los méritos de ese ambiente para que el proyecto habitacional se vea beneficiado haciéndolo diferente al común de la oferta de la ciudad. Cerca de 1000.00 m2 de área del terreno siguen siendo verdes con grama natural mientras que el resto es la huella de esta estructura que se enfrenta sin temor ni timidez a la vista de la ciudad de Panamá.
+                135 apartamentos en más de 10 topologías se ofrecen y la fachada no demuestra esa variedad inusual en sus plantas.
+                La calle sigue siendo la misma luego de su construcción.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
