@@ -100,7 +100,7 @@
     <script type="text/javascript">
 
         $(window).load(function(){
-          
+
             $("a.isGoingDownType").click(function() {
                 $("#butDropDownType").dropdown("toggle");
             });
@@ -108,12 +108,12 @@
             $("a.isGoingDownReg").click(function() {
                 $("#butDropDownReg").dropdown("toggle");
             });
-          
+
             var $container = $('.portfolioContainer'),
                 $body = $('body'),
                 colW = 0,
                 columns = null;
-          
+
             $container.isotope({
             // disable window resizing
                 resizable: true,
@@ -121,7 +121,7 @@
                     columnWidth: colW
                 }
             });
-          
+
             $(window).smartresize(function(){
                 // check if columns has changed
                 var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
@@ -137,16 +137,16 @@
             $('.portfolioFilter a').click(function(){
                 $('.portfolioFilter .current').removeClass('current');
                 $(this).addClass('current');
-         
+
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
-                    
+
                     filter: selector,
                 });
                 return false;
             });
         });
-        
+
     </script>
 
     <!-- PORTFOLIO -->
@@ -172,7 +172,7 @@
                         <li><a class="isGoingDownType" href="#" data-filter=".comerce"           >Edificios comerciales</a></li>
                         <li><a class="isGoingDownType" href="#" data-filter=".residential"       >Residenciales</a></li>
                         <li><a class="isGoingDownType" href="#" data-filter=".institutional"     >Institucionales</a></li>
-                        <li><a class="isGoingDownType" href="#" data-filter=".urban"             >Planificación urbana</a></li> 
+                        <li><a class="isGoingDownType" href="#" data-filter=".urban"             >Planificación urbana</a></li>
                     </ul>
                 </div>
                 <!-- /Dropdown para el menu de tipo -->
@@ -189,16 +189,16 @@
                 <!-- /Dropdown para el menu de region -->
                 <li><a href="#" data-filter=".wip" >En proceso</a></li>
                 <li><a href="#" data-filter=".notcomp" >No ejecutado</a></li>
-                
-                
+
+
             </ul>
            </div>
         </div>
     </section>
 
-  
+
     <!--  LOS PROYECTOS VAN AQUI  --> <!--  LOS PROYECTOS VAN AQUI  --> <!--  LOS PROYECTOS VAN AQUI  --> <!--  LOS PROYECTOS VAN AQUI  -->
-   
+
     <div class="portfolioContainer no-gutter">
         <!-- Proyecto 1 -->
         <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
@@ -225,9 +225,33 @@
                 </div>
             </a>
         </div>
-        
-        
-        
+
+        <!-- Proyecto 2 -->
+        <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
+        <div class="col-lg-4 col-sm-6 Portfolio-box height">
+            <!-- Cambia el numero donde dice projects/project#.html -->
+            <a href="projects/project2.html" class="portfolio-box portfolio-link" data-toggle="modal">
+                <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
+                <img src="../img/portfolio/luxor.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <!-- Categoria (Solo nombre) -->
+                        <div class="project-category">
+                            Edificios en altura
+                        </div>
+                        <!-- Nombre del proyecto -->
+                        <div class="project-name">
+                            Luxor Tower
+                        </div>
+                        <!-- Ubicacion -->
+                        <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
+                        <!-- Año -->
+                        <h6>Año: 2006</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+
     </div>
 
 
