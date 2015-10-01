@@ -81,7 +81,7 @@
             function ScaleSlider() {
                 var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
                 if (parentWidth)
-                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 2000));
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1500));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
@@ -117,10 +117,10 @@
             <div style="position: fixed; top:0px;right: 5px;">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="../portfolio.html">Volver</a>
+                        <a href="../portfolio.html">Back</a>
                     </li>
                     <li>
-                        <a href="../../en/projects/project1.html" hreflang="en">En</a>
+                        <a href="../../es/projects/project1.html" hreflang="en">Es</a>
                     </li>
                 </ul>
             </div>
@@ -129,7 +129,7 @@
 
      <!-- Los proyectos van aqui -->
     <!-- Jssor Slider -->
-    <div id="slider1_container" style="position: relative; width: 1000px;
+    <div class="center-block" id="slider1_container" style="position: relative; width: 1000px;
         height: 765px; overflow: hidden;">
 
         <!-- Slides Container -->
