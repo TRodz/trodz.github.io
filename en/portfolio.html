@@ -92,60 +92,63 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- TODO:
-        POR ORDEN DE INTERÉS
-     -->
-
-     <!-- ISOTOPE -->
+    <!-- ISOTOPE -->
     <script type="text/javascript">
 
-        $(window).load(function(){
+        $(document).ready(function(){
 
             $("a.isGoingDownType").click(function() {
                 $("#butDropDownType").dropdown("toggle");
             });
-
             $("a.isGoingDownReg").click(function() {
                 $("#butDropDownReg").dropdown("toggle");
             });
 
-            var $container = $('.portfolioContainer'),
+            var $grid = $('.portfolioContainer'),
                 $body = $('body'),
                 colW = 0,
                 columns = null;
 
-            // $container.isotope({
-            // // disable window resizing
-            //     resizable: true,
-            //     masonry: {
-            //         columnWidth: colW
-            //     }
-            // });
-
-            $(window).smartresize(function(){
-                // check if columns has changed
-                var currentColumns = Math.floor( ( $body.width() - 30 ) / colW );
-                if ( currentColumns !== columns ) {
-                    // set new column count
-                    columns = currentColumns;
-                    // apply width to container manually, then trigger relayout
-                    $container.width( columns * colW )
-                    .isotope('reLayout');
+            var $container = $('.portfolioContainer').isotope({
+                resizable: true,
+                masonry: {
+                    columnWidth: colW
+                },
+                itemSelector: '.container-item',
+                layoutMode: 'fitRows',
+                getSortData: {
+                    name: '.name',
+                    year: '.year'
                 }
-            }).smartresize(); // trigger resize to set container width
+            });
 
             $('.portfolioFilter a').click(function(){
                 $('.portfolioFilter .current').removeClass('current');
                 $(this).addClass('current');
-
                 var selector = $(this).attr('data-filter');
-                $container.isotope({
-
-                    filter: selector,
-                });
-                return false;
+                $container.isotope({ filter: selector });
             });
-        });
+
+            $('.portfolioSort a').click(function() {
+                var selector = $(this).attr('data-sort-by');
+                $container.isotope({ sortBy: selector });
+            });
+
+
+            // $(window).smartresize(function(){
+            //     // check if columns has changed
+            //     var currentColumns = Math.floor( ( $body.width() - 30 ) / colW );
+            //     if ( currentColumns !== columns ) {
+            //         // set new column count
+            //         columns = currentColumns;
+            //         // apply width to container manually, then trigger relayout
+            //         $container.width( columns * colW )
+            //         .isotope('reLayout');
+            //     }
+            // }).smartresize(); // trigger resize to set container width
+
+
+        }); // window onload
 
     </script>
 
@@ -160,39 +163,44 @@
                 </div>
             </div>
             <div class="portfolioFilter">
-            <ul class="Portfolio-nav wow fadeIn delay-02s">
-                <li><a href="#" data-filter="*" class="current" >All</a></li> <!-- CRONOLOGICAMENTE -->
-                <!-- Dropdown para el menu de tipo -->
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn-custom dropdown-toggle" id="butDropDownType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Type <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="isGoingDownType" href="#" data-filter=".height"            >Rised buildings</a></li>
-                        <li><a class="isGoingDownType" href="#" data-filter=".comerce"           >commercial buildings</a></li>
-                        <li><a class="isGoingDownType" href="#" data-filter=".residential"       >Residences</a></li>
-                        <li><a class="isGoingDownType" href="#" data-filter=".institutional"     >Institutions</a></li>
-                        <li><a class="isGoingDownType" href="#" data-filter=".urban"             >Urban planning</a></li>
-                    </ul>
-                </div>
-                <!-- /Dropdown para el menu de tipo -->
-                <!-- Dropdown para el menu de region -->
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn-custom dropdown-toggle" id="butDropDownReg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Region <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="isGoingDownReg" href="#" data-filter=".pty"  >Panama City</a></li>
-                        <li><a class="isGoingDownReg" href="#" data-filter=".international">International</a></li>
-                    </ul>
-                </div>
-                <!-- /Dropdown para el menu de region -->
-                <li><a href="#" data-filter=".wip" >Work in progress</a></li>
-                <li><a href="#" data-filter=".notcomp" >Not executed</a></li>
-            </ul>
-           </div>
+                <ul class="Portfolio-nav wow fadeIn delay-02s">
+                    <li><a href="#" data-filter="*" class="current" >All</a></li> <!-- CRONOLOGICAMENTE -->
+                    <!-- Dropdown para el menu de tipo -->
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn-custom dropdown-toggle" id="butDropDownType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="isGoingDownType" href="#" data-filter=".height"            >Rised buildings</a></li>
+                            <li><a class="isGoingDownType" href="#" data-filter=".comerce"           >commercial buildings</a></li>
+                            <li><a class="isGoingDownType" href="#" data-filter=".residential"       >Residences</a></li>
+                            <li><a class="isGoingDownType" href="#" data-filter=".institutional"     >Institutions</a></li>
+                            <li><a class="isGoingDownType" href="#" data-filter=".urban"             >Urban planning</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Dropdown para el menu de tipo -->
+                    <!-- Dropdown para el menu de region -->
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn-custom dropdown-toggle" id="butDropDownReg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Region <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="isGoingDownReg" href="#" data-filter=".pty"  >Panama City</a></li>
+                            <li><a class="isGoingDownReg" href="#" data-filter=".international">International</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Dropdown para el menu de region -->
+                    <li><a href="#" data-filter=".wip" >Work in progress</a></li>
+                    <li><a href="#" data-filter=".notcomp" >Not executed</a></li>
+                </ul>
+            </div>
+            <div class="portfolioSort">
+                <ul class="Portfolio-nav wow fadeIn delay-02s">
+                    <li><a href="#" data-sort-by="name">Name</a></li>
+                    <li><a href="#" data-sort-by="year">Year</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
 
 
     <!--  LOS PROYECTOS VAN AQUI  --> <!--  LOS PROYECTOS VAN AQUI  --> <!--  LOS PROYECTOS VAN AQUI  --> <!--  LOS PROYECTOS VAN AQUI  -->
@@ -200,7 +208,7 @@
     <div class="portfolioContainer no-gutter">
         <!-- Proyecto 1 -->
         <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-        <div class="col-lg-4 height">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height">
             <!-- Cambia el numero donde dice projects/project#.html -->
             <a href="projects/project1.html" class="portfolio-box portfolio-link">
                 <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
@@ -213,21 +221,20 @@
                         </div>
                         <!-- Nombre del proyecto -->
                         <div class="project-name">
-                            Luxor Tower
+                            <span class="name">Luxor Tower</span>
                         </div>
                         <!-- Ubicacion -->
                         <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
                         <!-- Año -->
-                        <h6>Año: 2006</h6>
+                        <h6>Año: <span class="year">2004</span></h6>
                     </div>
                 </div>
             </a>
         </div>
-        <!-- Proyecto 1 -->
 
-        <!-- Proyecto 1 -->
+        <!-- Proyecto 2 -->
         <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-        <div class="col-lg-4 height">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height">
             <!-- Cambia el numero donde dice projects/project#.html -->
             <a href="projects/project1.html" class="portfolio-box portfolio-link">
                 <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
@@ -240,21 +247,20 @@
                         </div>
                         <!-- Nombre del proyecto -->
                         <div class="project-name">
-                            Luxor Tower
+                            <span class="name">Kuxor Tower</span>
                         </div>
                         <!-- Ubicacion -->
                         <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
                         <!-- Año -->
-                        <h6>Año: 2006</h6>
+                        <h6>Año: <span class="year">2006</span></h6>
                     </div>
                 </div>
             </a>
         </div>
-        <!-- Proyecto 1 -->
 
-        <!-- Proyecto 1 -->
+        <!-- Proyecto 2 -->
         <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-        <div class="col-lg-4 height">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height">
             <!-- Cambia el numero donde dice projects/project#.html -->
             <a href="projects/project1.html" class="portfolio-box portfolio-link">
                 <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
@@ -267,97 +273,16 @@
                         </div>
                         <!-- Nombre del proyecto -->
                         <div class="project-name">
-                            Luxor Tower
+                            <span class="name">Muxor Tower</span>
                         </div>
                         <!-- Ubicacion -->
                         <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
                         <!-- Año -->
-                        <h6>Año: 2006</h6>
+                        <h6>Año: <span class="year">2009</span></h6>
                     </div>
                 </div>
             </a>
         </div>
-        <!-- Proyecto 1 -->
-        <!-- Proyecto 1 -->
-        <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-        <div class="col-lg-4 height">
-            <!-- Cambia el numero donde dice projects/project#.html -->
-            <a href="projects/project1.html" class="portfolio-box portfolio-link">
-                <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
-                <img src="../img/portfolio/luxor.jpg" class="img-responsive">
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <!-- Categoria (Solo nombre) -->
-                        <div class="project-category">
-                            Edificios en altura
-                        </div>
-                        <!-- Nombre del proyecto -->
-                        <div class="project-name">
-                            Luxor Tower
-                        </div>
-                        <!-- Ubicacion -->
-                        <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
-                        <!-- Año -->
-                        <h6>Año: 2006</h6>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Proyecto 1 -->
-
-        <!-- Proyecto 1 -->
-        <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-        <div class="col-lg-4 height">
-            <!-- Cambia el numero donde dice projects/project#.html -->
-            <a href="projects/project1.html" class="portfolio-box portfolio-link">
-                <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
-                <img src="../img/portfolio/luxor.jpg" class="img-responsive">
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <!-- Categoria (Solo nombre) -->
-                        <div class="project-category">
-                            Edificios en altura
-                        </div>
-                        <!-- Nombre del proyecto -->
-                        <div class="project-name">
-                            Luxor Tower
-                        </div>
-                        <!-- Ubicacion -->
-                        <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
-                        <!-- Año -->
-                        <h6>Año: 2006</h6>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Proyecto 1 -->
-
-        <!-- Proyecto 1 -->
-        <!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-        <div class="col-lg-4 height">
-            <!-- Cambia el numero donde dice projects/project#.html -->
-            <a href="projects/project1.html" class="portfolio-box portfolio-link">
-                <!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
-                <img src="../img/portfolio/luxor.jpg" class="img-responsive">
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <!-- Categoria (Solo nombre) -->
-                        <div class="project-category">
-                            Edificios en altura
-                        </div>
-                        <!-- Nombre del proyecto -->
-                        <div class="project-name">
-                            Luxor Tower
-                        </div>
-                        <!-- Ubicacion -->
-                        <h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
-                        <!-- Año -->
-                        <h6>Año: 2006</h6>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Proyecto 1 -->
 
     </div>
 
