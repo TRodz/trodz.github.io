@@ -81,7 +81,7 @@
             function ScaleSlider() {
                 var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
                 if (parentWidth)
-                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 2000));
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1000));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
@@ -104,16 +104,9 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> -->
                 <div><a class="page-scroll" href="../../index.html"><img src="../../img/logo3.png" class="logo" alt=""></a></div>
             </div>
 
-            <!-- class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"-->
             <div style="position: fixed; top:0px;right: 5px;">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -127,9 +120,8 @@
         </div>
     </nav>
 
-     <!-- Los proyectos van aqui -->
     <!-- Jssor Slider -->
-    <div id="slider1_container" style="position: relative; width: 1000px;
+    <div id="slider1_container" class="center-block" style="position: relative; width: 1000px;
         height: 765px; overflow: hidden;">
 
         <!-- Slides Container -->
@@ -184,19 +176,9 @@
                     <div class="o"></div>
                 </div>
             </div>
-            <!-- Thumbnail Item Skin End -->
-            <!--#region Arrow Navigator Skin Begin -->
-            <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
-            <style>
-
-            </style>
-            <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 20px;">
-            </span>
+            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 20px;"></span>
             <!-- Arrow Right -->
-            <span u="arrowright" class="jssora11r" style="top: 123px; right: 60px;">
-            </span>
-            <!--#endregion Arrow Navigator Skin End -->
+            <span u="arrowright" class="jssora11r" style="top: 123px; right: 60px;"></span>
         </div>
     </div>
     <!-- Jssor Slider End -->

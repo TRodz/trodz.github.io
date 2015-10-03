@@ -83,20 +83,12 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- <header class="about-header">
-        <div class="header-content">
-            <div class="header-content-inner wow fadeInUp delay-01s">
-                <h1>Contacto</h1>
-            </div>
-        </div>
-    </header> -->
-
-    <section class="main-section paddind" id="contact">
+    <div class="main-section" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contacto</h2>
-                    <hr class="primary">
+                    <h2>Contacto</h2>
+                    <hr>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-home fa-3x wow bounceIn"></i>
@@ -107,14 +99,44 @@
                     <p>225-1289 <br> 227-1289</p>
                 </div>
                 <div class="col-lg-4 text-center">
+
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:heaarq@echeverriaasoc.net
-">correo electrónico
-</a></p>
+                    <p><a href="mailto:heaarq@echeverriaasoc.net">correo electrónico</a></p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Escríbenos</h2>
+                    <!-- <hr> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="//formspree.io/contacto@echeverriaasoc.net" method="POST">
+        <div class="contact-info">
+
+            <label><span>Nombre</span>
+            <input type="text" name="name"></label>
+
+            <label for=""><span>Correo</span>
+            <input type="email" name="email"></label>
+
+        </div>
+
+            <label><span>Mensaje</span>
+            <textarea name="message"></textarea></label>
+
+        <div class="submit-info">
+            <input type="submit" value="Enviar">
+        </div>
+        <input type="hidden" name="_next" value="thanks.html"/>
+    </form>
 
     <!-- Map -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1388.536268070947!2d-79.53163335122359!3d8.975763384360063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x34afcda8a4ecf851!2sAlianza+Francesa+Panam%C3%A1!5e0!3m2!1ses-419!2snz!4v1440038234400" width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen>

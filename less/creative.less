@@ -19,25 +19,17 @@ hr {
     max-width: 50px;
 }
 
-hr.light {
-    border-color: @theme-white;
-}
-
 a {
     .transition-all;
     color: @theme-primary;
     &:hover,
     &:focus {
+        text-decoration: none;
         color: darken(@theme-primary, 10%);
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     .sans-serif-font;
 }
 
@@ -49,16 +41,6 @@ p {
 
 .bg-primary {
     background-color: #7F7F7F;
-}
-
-.bg-secondary {
-    background-color: @theme-dark;
-    color: @theme-white;
-}
-
-.bg-dark {
-    background-color: @theme-dark;
-    color: @theme-white;
 }
 
 .text-faded {
@@ -113,10 +95,6 @@ aside {
 .navbar-default .navbar-toggle:focus {
     transition: all .3s;
     background-color: @theme-dark;
-}
-
-.no-padding {
-    padding: 0;
 }
 
 // Navigation
@@ -210,7 +188,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header1.jpg');
+    background-image: url('../img/index.jpg');
     box-shadow: inset 0px 50px 200px #202020;
     text-align: center;
     color: @theme-white;
@@ -263,33 +241,7 @@ header {
     }
 }
 
-.index-header {
-    background-image: url('../img/index1.jpg');
-}
-.about-header {
-    background-image: url('../img/2.jpg');
-}
-.portfolio-header {
-    background-image: url('../img/header1.jpg');
-}
-
-// Sections
-
-.section-heading {
-    margin-top: 0;
-}
-
-.service-box {
-    max-width: 400px;
-    margin: 50px auto 0;
-    @media (min-width: 992px) {
-        margin: 20px auto 0;
-    }
-    p {
-        margin-bottom: 0;
-    }
-}
-
+// Portfolio
 .portfolio-box {
     position: relative;
     display: block;
@@ -348,22 +300,22 @@ header {
     }
 }
 
-.portfolioSort .Portfolio-nav {
-    padding: 0;
-    margin: 0 0 40px 0;
-    list-style: none;
-    text-align: center;
-}
-
-.portfolioFilter .Portfolio-nav{
+.portfolioFilter .Portfolio-nav {
     padding:0;
-    margin:0 0 15px 0;
+    margin:0 auto 15px 0;
     list-style:none;
     text-align:center;
 }
 
+.portfolioSort .Portfolio-nav {
+    padding: 0;
+    margin: 0 auto 40px 0;
+    list-style: none;
+    text-align: center;
+}
+
 .Portfolio-nav li{
-    margin:0 10px;
+    //margin:0 10px;
     display:inline;
 }
 
@@ -422,11 +374,11 @@ header {
     color: @theme-navy;
 }
 
-.call-to-action {
-    h2 {
-        margin: 0 auto 20px;
-    }
-}
+// .call-to-action {
+//     h2 {
+//         margin: 0 auto 20px;
+//     }
+// }
 
 // Bootstrap Overrides
 .text-primary {
@@ -498,7 +450,7 @@ header {
     -webkit-transition:all 0.3s ease-in-out;
 }
 .img-downsize {
-    max-width: 60.2%;
+    max-width: 60%;
 }
 
 // Extras
@@ -534,7 +486,7 @@ body {
     width: 100%;
     left: 0;
     bottom: 0;
-    position: fixed;
+    position: relative;
 }
 .thumb-box {
     padding: 1.4em 0 1em;
@@ -551,5 +503,74 @@ body {
 @media(max-width:768px) {
     .map {
         // height: 75%;
+    }
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto 50px;
+
+    input, textarea {
+        border: 2px solid fade(@theme-gray, 70%);
+        width: 100%;
+
+        &:focus {
+            outline: 3px solid fade(@theme-gray, 70%);
+            // border-color: @theme-;
+        }
+    }
+
+    .contact-info {
+        input {
+            height: 30px;
+        }
+
+        label {
+            width: 50%;
+            float: left;
+
+            &:nth-child(1) {
+                padding-right: 10px;
+            }
+
+            &:nth-child(2) {
+                padding-left: 10px;
+            }
+        }
+
+    }
+
+    label {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    span {
+        font-size: 16px;
+        display: block;
+    }
+
+
+    textarea {
+        height: 100px;
+    }
+
+    .submit-info {
+        input {
+            text-transform: uppercase;
+            background-color: @theme-gray;
+            color: rgb(255, 255, 255);;
+            border: none;
+            font-size: 2em;
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+                background-color: fade(@theme-gray, 70%);
+                transition: all 0.1s ease-in-out;
+            }
+        }
+
+
+
     }
 }
