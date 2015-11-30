@@ -48,8 +48,7 @@ p {
 }
 
 .text-faded {
-	color: fade(@theme-white, 100%);
-	text-shadow: 0px 0px 5px #000;
+	color: fade(@theme-gray, 80%);
 }
 
 .main-section {
@@ -60,40 +59,22 @@ aside {
 	padding: 50px 0;
 }
 
-//.logo {
-//  position: absolute;
-//  left: 40px;
-//  top: 15%;
-//  width: 150px;
-//}
-//
-//@media (min-width: 768px) {
-//	.logo {
-//		top: 20%;
-//		left: 10px;
-//	}
-//}
+.alignright {
 
-//.nav-project {
-//	.logo {
-//		
-//	}
-//	
-//	@media (min-width: 768px) {
-//		.logo {
-//				
-//		}
-//	}
-//}
+	text-align: right;
+
+}
 
 .navbar-right {
 	display: inline;
-	float: right;
+	float: left;
+	@media (min-width: 768px) {
+		float: right;
+	}
 }
 
 .navbar-logo {
 	.logo {
-//		left: 10px;
 		top: 15%;
 		position: absolute;
 		width: 150px;
@@ -279,7 +260,7 @@ header {
 		color: @theme-white;
 		opacity: 1;
 		display: block;
-		background: fade(@theme-dark, 60%);
+		background: fade(@theme-dark, 70%);
 		position: absolute;
 		bottom: 0;
 		text-align: center;
@@ -380,7 +361,7 @@ header {
 
 .isotope .isotope-item {
 	/* change duration value to whatever you like */
-	
+
 	-webkit-transition-duration: 0.6s;
 	-moz-transition-duration: 0.6s;
 	transition-duration: 0.6s;

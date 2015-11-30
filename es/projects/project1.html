@@ -35,59 +35,22 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
-	<!-- JSSOR -->
-	<script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
-	<link rel="stylesheet" href="../../css/jssor.css">
+	<!-- Master slider -->
+	<link href="../../css/master-slider/masterslider.css" rel="stylesheet">
+	<link href="../../css/master-slider/skins/black-2/style.css" rel='stylesheet' type='text/css'>
+	<link href='../../css/master-slider/style/ms-gallery-style.css' rel='stylesheet' type='text/css'>
+	<script src="../../js/masterslider.min.js"></script>
 
 	<!-- JSSOR -->
-	<script>
-		jQuery(document).ready(function ($) {
-			var options = {
-				$AutoPlay: false, //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-				$AutoPlayInterval: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-				$SlideDuration: 500, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-				$DragOrientation: 3, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-				$UISearchMode: 0, //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+	<!-- <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script> -->
+	<!-- <link rel="stylesheet" href="../../css/jssor.css"> -->
 
-				$ThumbnailNavigatorOptions: {
-					$Class: $JssorThumbnailNavigator$, //[Required] Class to create thumbnail navigator instance
-					$ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
-
-					$Loop: 1, //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
-					$SpacingX: 3, //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
-					$SpacingY: 3, //[Optional] Vertical space between each thumbnail in pixel, default value is 0
-					$DisplayPieces: 6, //[Optional] Number of pieces to display, default value is 1
-					$ParkingPosition: 253, //[Optional] The offset position to park thumbnail,
-
-					$ArrowNavigatorOptions: {
-						$Class: $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
-						$ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
-						$AutoCenter: 2, //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-						$Steps: 6 //[Optional] Steps to go for each navigation request, default value is 1
-					}
-				}
-			};
-
-			var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-			//responsive code begin
-			//you can remove responsive code if you don't want the slider scales while window resizes
-			function ScaleSlider() {
-				var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
-				if (parentWidth)
-					jssor_slider1.$ScaleWidth(Math.min(parentWidth, parentWidth - (parentWidth / 3)));
-				else
-					window.setTimeout(ScaleSlider, 30);
-			}
-			ScaleSlider();
-
-			$(window).bind("load", ScaleSlider);
-			$(window).bind("resize", ScaleSlider);
-			$(window).bind("orientationchange", ScaleSlider);
-			//responsive code end
-		});
-	</script>
-	<!-- JSSOR -->
+	<style media="screen">
+		#ms-gallery-1 {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+	</style>
 
 </head>
 
@@ -140,102 +103,219 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<!-- Jssor Slider -->
-	<div id="slider1_container" class="center-block" style="position: relative; top: 50px; width: 1000px;
-        height: 765px; overflow: hidden;">
 
-		<!-- Slides Container -->
-		<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 650px;
-            overflow: hidden;">
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/1.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/1.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/2.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/2.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/3.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/3.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/4.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/4.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/5.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/5.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/6.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/6.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/7.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/7.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/8.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/8.jpg" />
-			</div>
-			<div>
-				<img u="image" src="../../img/portfolio/luxor/9.jpg" />
-				<img u="thumb" src="../../img/portfolio/luxor/9.jpg" />
-			</div>
-		</div>
-		<!--#region Thumbnail Navigator Skin Begin -->
-		<!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
+	<!-- Masterslider -->
+	<div class="ms-gallery-template" id="ms-gallery-1">
 
-		<!-- thumbnail navigator container -->
-		<div u="thumbnavigator" class="jssort07" style="width: 1000px; height: 100px; left: 0px; bottom: 0px; position:fixed;">
-			<!-- Thumbnail Item Skin Begin -->
-			<div u="slides" style="cursor: default;">
-				<div u="prototype" class="p">
-					<div u="thumbnailtemplate" class="i"></div>
-					<div class="o"></div>
+		<div class="master-slider ms-skin-black-2 round-skin" id="masterslider">
+
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/1.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/1.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
 				</div>
 			</div>
-			<span u="arrowleft" class="jssora11l" style="top: 123px; left: 20px;"></span>
-			<!-- Arrow Right -->
-			<span u="arrowright" class="jssora11r" style="top: 123px; right: 60px;"></span>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/2.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/2.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/3.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/3.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/4.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/4.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/5.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/5.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/6.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/6.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/7.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/7.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/8.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/8.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/9.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/9.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/10.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/10.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/11.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/11.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/12.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/12.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/13.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/13.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+			<!-- slide -->
+			<div class="ms-slide">
+				<!-- Cambiar donde dice data-src -->
+				<img src="../../img/portfolio/luxor/master-slider/blank.gif" data-src="../../img/portfolio/luxor/14.jpg" alt="lorem ipsum dolor sit"/>
+				<!-- Cambiar donde dice src -->
+				<img src="../../img/portfolio/luxor/14.jpg" alt="thumb-1" class="ms-thumb"/>
+				<!-- Texto que va bajo la imagen -->
+				<div class="ms-info">
+					DESCRIPCIÓN
+				</div>
+			</div>
+
+		<!-- No pasarse de aquí -->
 		</div>
 	</div>
-	<!-- Jssor Slider End -->
-	<!-- DESCRIPCION -->
+
+	<!-- Información del proyecto -->
 
 	<div class="container" style="padding-top: 50px;">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="text-center">Luxor Tower</h2>
-				<!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-				<p>En un terreno de 3,000.00 m2 esquinero, donde existen árboles de 60 m de altura que bordean la propiedad, se ha planteado este proyecto que procura no solo salvar la vegetación, también intenta con éxito sumar los méritos de ese ambiente para que el proyecto habitacional se vea beneficiado haciéndolo diferente al común de la oferta de la ciudad. Cerca de 1000.00 m2 de área del terreno siguen siendo verdes con grama natural mientras que el resto es la huella de esta estructura que se enfrenta sin temor ni timidez a la vista de la ciudad de Panamá. 135 apartamentos en más de 10 topologías se ofrecen y la fachada no demuestra esa variedad inusual en sus plantas. La calle sigue siendo la misma luego de su construcción.</p>
+
+				<!-- Títutlo -->
+
+				<h2 class="text-center">LUXOR TOWER 100 Y 200</h2>
+
+				<!-- Ubicacion -->
+
+				<h5 class="text-center text-faded"> El Cangrejo, Ciudad de Panamá</h5>
+
+				<!-- Descripción -->
+
+				<p>
+					En un terreno triangular de 3,000.00 m2 de superficie, esquinero, donde existían árboles de 20 m de altura bordeando la propiedad, se ha planteado este proyecto que salvaguarda la vegetación conservando la escena urbana peatonal que por décadas ha existido y cubre con éxito el nuevo bloque de estacionamientos.
+					Cerca de un 30% del área del terreno siguen siendo verde con grama natural, mientras que el resto es la huella del podio de estacionamientos, y sobre él, la torre sinuosa que sutilmente se incorpora al perfil urbano de la ciudad de Panamá.
+					135 apartamentos en más de 10 topologías se ofrecen y la fachada no demuestra esa variedad inusual en sus plantas.
+
+				</p>
+
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-				<!-- Se agrega <br> para hacer salto de linea -->
-				<!-- Sino simplemente se usa <p> para cada linea, pero resulta dejando un espacio mayor entre cada parrafo -->
-				<h2>General</h2>
+			<div class="col-lg-offset-2 col-lg-4 col-sm-6 col-xs-6 alignright">
+				<h3 class="text-faded">INGENIERÍAS</h3>
 				<p>
-					<i class="fa fa-map"></i> El cangrejo, Ciudad de Panamá
-					<br><i class="fa fa-building"></i> 3000.00 m<sup>2</sup>
-					<br> <i class="fa fa-home"></i> 135 aptos.
+					Luis García Dutari: Estructural<br>
+					Carlos Penna F: Eléctrico<br>
+					Jorge Kiamco: Mecánico
 				</p>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<div class=" col-lg-4 col-sm-6 col-xs-6">
 				<!-- Se agrega <br> para hacer salto de linea -->
 				<!-- Sino simplemente se usa <p> para cada linea, pero resulta dejando un espacio mayor entre cada parrafo -->
-				<h2>Detalles</h2>
+				<h3 class="text-faded">FICHA TÉCNICA</h3>
 				<p>
-					detalle: descripción
-					<br> detalle: descripción
-					<br> detalle: descripción
+					<i class="fa fa-map"></i> Area lote: 3000.00 m <sup>2</sup>
+					<br><i class="fa fa-building"></i> Area construida: 32000.00 m<sup>2</sup>
+					<br> <i class="fa fa-home"></i> Año: 2003-2006
 				</p>
 			</div>
+
 		</div>
 	</div>
 
@@ -289,5 +369,22 @@
 	<script src="../../js/creative.js"></script>
 
 </body>
+
+	<script type="text/javascript">
+
+		var slider = new MasterSlider();
+		slider.setup('masterslider' , {
+			width:1000,
+			height:605,
+			space:10,
+			preload:3,
+			view:'basic'
+		});
+		slider.control('arrows');
+
+		var gallery = new MSGallery('ms-gallery-1' , slider);
+		gallery.setup();
+
+	</script>
 
 </html>
