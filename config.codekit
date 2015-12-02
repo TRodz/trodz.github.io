@@ -38,7 +38,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/grab.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/grabbing.png": {
 		"fileType": 32768,
@@ -49,7 +49,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/grabbing.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/masterslider.css": {
 		"fileType": 16,
@@ -69,7 +69,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/black-1\/black-skin-1-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/black-1\/black-skin-1.png": {
 		"fileType": 32768,
@@ -80,7 +80,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/black-1\/black-skin-1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/black-1\/style.css": {
 		"fileType": 16,
@@ -100,7 +100,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/black-2\/black-skin-2-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/black-2\/black-skin-2.png": {
 		"fileType": 32768,
@@ -111,7 +111,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/black-2\/black-skin-2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/black-2\/style.css": {
 		"fileType": 16,
@@ -131,7 +131,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/contrast\/contrast-skin-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/contrast\/contrast-skin.png": {
 		"fileType": 32768,
@@ -142,7 +142,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/contrast\/contrast-skin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/contrast\/style.css": {
 		"fileType": 16,
@@ -162,7 +162,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/default\/light-skin-1-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/default\/light-skin-1.png": {
 		"fileType": 32768,
@@ -173,7 +173,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/default\/light-skin-1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/default\/style.css": {
 		"fileType": 16,
@@ -193,7 +193,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-2\/light-skin-2-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-2\/light-skin-2.png": {
 		"fileType": 32768,
@@ -204,7 +204,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-2\/light-skin-2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-2\/style.css": {
 		"fileType": 16,
@@ -224,7 +224,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-3\/light-skin-3-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-3\/light-skin-3.png": {
 		"fileType": 32768,
@@ -235,7 +235,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-3\/light-skin-3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-3\/style.css": {
 		"fileType": 16,
@@ -255,7 +255,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-4\/light-skin-4-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-4\/light-skin-4.png": {
 		"fileType": 32768,
@@ -266,7 +266,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-4\/light-skin-4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-4\/style.css": {
 		"fileType": 16,
@@ -286,7 +286,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-5\/light-skin-5-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-5\/light-skin-5.png": {
 		"fileType": 32768,
@@ -297,7 +297,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-5\/light-skin-5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-5\/style.css": {
 		"fileType": 16,
@@ -317,7 +317,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-6\/light-skin-6-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-6\/light-skin-6.png": {
 		"fileType": 32768,
@@ -328,7 +328,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/light-6\/light-skin-6.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/light-6\/style.css": {
 		"fileType": 16,
@@ -348,7 +348,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/metro\/metro-skin-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/metro\/metro-skin.png": {
 		"fileType": 32768,
@@ -359,7 +359,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/skins\/metro\/metro-skin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/skins\/metro\/style.css": {
 		"fileType": 16,
@@ -379,7 +379,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/style\/arrows.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/style\/btns.png": {
 		"fileType": 32768,
@@ -390,7 +390,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/style\/btns.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/style\/ms-gallery-style.css": {
 		"fileType": 16,
@@ -419,7 +419,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/style\/sicons.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/master-slider\/video-close-btn.png": {
 		"fileType": 32768,
@@ -430,7 +430,7 @@
 		"outputAbbreviatedPath": "\/css\/master-slider\/video-close-btn.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/mixins.css": {
 		"fileType": 16,
@@ -558,6 +558,42 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/es\/projects\/project2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/es\/projects\/project2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/es\/projects\/project3.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/es\/projects\/project3.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/es\/projects\/project4.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/es\/projects\/project4.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/es\/publicacionTemplate.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/es\/publicacionTemplate.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/es\/thanks.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -576,7 +612,7 @@
 		"outputAbbreviatedPath": "\/favicon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/index.jpg": {
 		"fileType": 16384,
@@ -587,7 +623,7 @@
 		"outputAbbreviatedPath": "\/img\/index.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/logo3.png": {
 		"fileType": 32768,
@@ -598,172 +634,194 @@
 		"outputAbbreviatedPath": "\/img\/logo3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/portfolio\/luxor\/1 old.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.73443e+07,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/1 old.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/1 old.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 393617,
+		"initialSize": 360812,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/1.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/10.JPG": {
+	"\/img\/portfolio\/luxor\/10.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.66589e+07,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/10.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/10.JPG",
+		"initialSize": 147439,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/10.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/10.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/11.JPG": {
+	"\/img\/portfolio\/luxor\/11.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.7984e+07,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/11.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/11.JPG",
+		"initialSize": 144859,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/11.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/11.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/12.JPG": {
+	"\/img\/portfolio\/luxor\/12.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 97354,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/12.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/12.JPG",
+		"initialSize": 76525,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/12.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/12.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/13.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 289382,
+		"initialSize": 194905,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/13.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/13.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/14.JPG": {
+	"\/img\/portfolio\/luxor\/14.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 752910,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/14.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/14.JPG",
+		"initialSize": 445730,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/14.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/14.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/2.JPG": {
+	"\/img\/portfolio\/luxor\/2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 318703,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/2.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/2.JPG",
+		"initialSize": 277454,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/2.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/3.JPG": {
+	"\/img\/portfolio\/luxor\/3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 345996,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/3.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/3.JPG",
+		"initialSize": 307382,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/3.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 230145,
+		"initialSize": 164780,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/4.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/5.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 262600,
+		"initialSize": 205968,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/5.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/6.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 254859,
+		"initialSize": 165006,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/6.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/6.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/7.JPG": {
+	"\/img\/portfolio\/luxor\/7.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 214841,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/7.JPG",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/7.JPG",
+		"initialSize": 49551,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/7.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/7.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor\/7_old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116174,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/7_old.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/7_old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/8.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 234470,
+		"initialSize": 192743,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/8.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/8.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor\/8_old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 307776,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/8_old.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/8_old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/9.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 353459,
+		"initialSize": 166369,
 		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/9.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/9.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor\/9_old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 255556,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/9_old.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/9_old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/01vista_color.jpg": {
 		"fileType": 16384,
@@ -774,7 +832,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/01vista_color.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/02prueba.jpg": {
 		"fileType": 16384,
@@ -785,7 +843,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/02prueba.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/03closeup_1.jpg": {
 		"fileType": 16384,
@@ -796,7 +854,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/03closeup_1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/04fachada_2B.jpg": {
 		"fileType": 16384,
@@ -807,7 +865,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/04fachada_2B.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/05fachada_1.jpg": {
 		"fileType": 16384,
@@ -818,7 +876,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/05fachada_1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/06planta.jpg": {
 		"fileType": 16384,
@@ -829,7 +887,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/06planta.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/07nocturna.jpg": {
 		"fileType": 16384,
@@ -840,7 +898,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/07nocturna.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/CONCEPTOS\/08shot_2.jpg": {
 		"fileType": 16384,
@@ -851,7 +909,7 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/CONCEPTOS\/08shot_2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/portfolio\/luxor\/index.jpg": {
 		"fileType": 16384,
@@ -862,202 +920,312 @@
 		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/index.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/1.jpg": {
+	"\/img\/portfolio\/luxor300\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20033,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/1.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/1.jpg",
+		"initialSize": 145034,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/1.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191328,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/10.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134489,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/2.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 139176,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/3.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 125655,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/4.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160840,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/5.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 168004,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/6.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146424,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/7.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124509,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/8.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153101,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/9.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/9.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/portfolio\/luxor300\/index.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57201,
+		"inputAbbreviatedPath": "\/img\/portfolio\/luxor300\/index.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/luxor300\/index.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/2.jpg": {
+	"\/img\/portfolio\/oceania100\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20661,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/2.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/2.jpg",
+		"initialSize": 65728,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/1.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/3.jpg": {
+	"\/img\/portfolio\/oceania100\/2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20837,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/3.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/3.jpg",
+		"initialSize": 122650,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/2.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/4.jpg": {
+	"\/img\/portfolio\/oceania100\/3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18977,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/4.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/4.jpg",
+		"initialSize": 228407,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/3.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/5.jpg": {
+	"\/img\/portfolio\/oceania100\/4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20907,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/5.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/5.jpg",
+		"initialSize": 145722,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/4.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/6.jpg": {
+	"\/img\/portfolio\/oceania100\/5.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 19196,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/6.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/6.jpg",
+		"initialSize": 99406,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/5.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/7.jpg": {
+	"\/img\/portfolio\/oceania100\/6.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20124,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/7.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/7.jpg",
+		"initialSize": 78557,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/6.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/6.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/8.jpg": {
+	"\/img\/portfolio\/oceania100\/index.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 22167,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/8.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/8.jpg",
+		"initialSize": 72721,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania100\/index.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania100\/index.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/cover.jpg": {
+	"\/img\/portfolio\/oceania200\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18747,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/cover.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/cover.jpg",
+		"initialSize": 73548,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/1.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/1.jpg": {
+	"\/img\/portfolio\/oceania200\/2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2453,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/1.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/1.jpg",
+		"initialSize": 56241,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/2.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/2.jpg": {
+	"\/img\/portfolio\/oceania200\/3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2613,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/2.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/2.jpg",
+		"initialSize": 59093,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/3.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/3.jpg": {
+	"\/img\/portfolio\/oceania200\/4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2622,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/3.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/3.jpg",
+		"initialSize": 61574,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/4.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/4.jpg": {
+	"\/img\/portfolio\/oceania200\/5.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2353,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/4.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/4.jpg",
+		"initialSize": 650928,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/5.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/5.jpg": {
+	"\/img\/portfolio\/oceania200\/6.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2667,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/5.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/5.jpg",
+		"initialSize": 53044,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/6.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/6.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/6.jpg": {
+	"\/img\/portfolio\/oceania200\/7.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2373,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/6.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/6.jpg",
+		"initialSize": 1.27575e+06,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/7.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/7.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/7.jpg": {
+	"\/img\/portfolio\/oceania200\/8.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2525,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/7.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/7.jpg",
+		"initialSize": 57254,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/8.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/8.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/8.jpg": {
+	"\/img\/portfolio\/oceania200\/9.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2490,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/8.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/8.jpg",
+		"initialSize": 67695,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/9.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/9.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/img\/portfolio\/luxor\/master-slider\/thumbs\/cover-thumb.jpg": {
+	"\/img\/portfolio\/oceania200\/index.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2319,
-		"inputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/cover-thumb.jpg",
-		"outputAbbreviatedPath": "\/img\/portfolio\/luxor\/master-slider\/thumbs\/cover-thumb.jpg",
+		"initialSize": 63627,
+		"inputAbbreviatedPath": "\/img\/portfolio\/oceania200\/index.jpg",
+		"outputAbbreviatedPath": "\/img\/portfolio\/oceania200\/index.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1071,7 +1239,7 @@
 		"outputAbbreviatedPath": "\/img\/posts\/1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/posts\/2.jpg": {
 		"fileType": 16384,
@@ -1082,7 +1250,7 @@
 		"outputAbbreviatedPath": "\/img\/posts\/2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/posts\/3.jpg": {
 		"fileType": 16384,
@@ -1093,7 +1261,7 @@
 		"outputAbbreviatedPath": "\/img\/posts\/3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/posts\/4.jpg": {
 		"fileType": 16384,
@@ -1104,7 +1272,7 @@
 		"outputAbbreviatedPath": "\/img\/posts\/4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/posts\/5.jpg": {
 		"fileType": 16384,
@@ -1115,7 +1283,7 @@
 		"outputAbbreviatedPath": "\/img\/posts\/5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/team\/1.jpg": {
 		"fileType": 16384,
@@ -1126,7 +1294,7 @@
 		"outputAbbreviatedPath": "\/img\/team\/1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/team\/2.jpg": {
 		"fileType": 16384,
@@ -1137,7 +1305,7 @@
 		"outputAbbreviatedPath": "\/img\/team\/2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/team\/3.jpg": {
 		"fileType": 16384,
@@ -1148,7 +1316,7 @@
 		"outputAbbreviatedPath": "\/img\/team\/3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -1220,6 +1388,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/masterslider.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/masterslider.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/sort-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/sort-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/sort-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1336,9 +1515,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "trodz.github.io",
-	"displayValueWasSetByUser": 0,
-	"iconImageName": "harddrive_darkGray"
+	"displayValue": "timrodz.github.io",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "harddrive_yellow"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
