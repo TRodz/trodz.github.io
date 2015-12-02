@@ -8,10 +8,10 @@ $(document).ready(function () {
 	});
 
 	var $container = $('.portfolioContainer').isotope({
-		resizable: true,
-		masonry: {
-			columnWidth: 0
-		},
+		// resizable: true,
+		// masonry: {
+		// 	columnWidth: 0
+		// },
 		itemSelector: '.container-item',
 		layoutMode: 'fitRows',
 		getSortData: {

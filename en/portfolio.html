@@ -87,47 +87,57 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<!-- PORTFOLIO -->
-	<!-- Portfolio Filters -->
+	<!-- PORTAFOLIO -->
+	<!-- FILTROS -->
 	<div class="main-section" id="Portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Sort by</h2>
+					<h2 class="section-heading">SORT BY</h2>
 					<hr>
 				</div>
 			</div>
 			<div class="portfolioFilter">
 				<ul class="Portfolio-nav wow fadeIn delay-02s">
 					<li><a href="#" data-filter="*" class="current">All</a></li>
+
 					<!-- CRONOLOGICAMENTE -->
-					<!-- Dropdown para el menu de tipo -->
+
 					<div class="btn-group-vertical">
 						<button type="button" class="btn-custom dropdown-toggle" id="butDropDownType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Type <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu">
+
+							<!-- Tipo de proyecto -->
+
 							<li><a class="isGoingDownType" href="#" data-filter=".height">Rised buildings</a></li>
 							<li><a class="isGoingDownType" href="#" data-filter=".comerce">commercial buildings</a></li>
 							<li><a class="isGoingDownType" href="#" data-filter=".residential">Residences</a></li>
 							<li><a class="isGoingDownType" href="#" data-filter=".institutional">Institutions</a></li>
 							<li><a class="isGoingDownType" href="#" data-filter=".urban">Urban planning</a></li>
+
 						</ul>
 					</div>
-					<!-- /Dropdown para el menu de tipo -->
-					<!-- Dropdown para el menu de region -->
 					<div class="btn-group-vertical">
 						<button type="button" class="btn-custom dropdown-toggle" id="butDropDownReg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Region <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu">
-							<li><a class="isGoingDownReg" href="#" data-filter=".pty">Panama City</a></li>
+
+							<!-- Tipo de proyecto -->
+
+							<li><a class="isGoingDownReg" href="#" data-filter=".pty">Panama</a></li>
 							<li><a class="isGoingDownReg" href="#" data-filter=".international">International</a></li>
+
 						</ul>
 					</div>
-					<!-- /Dropdown para el menu de region -->
+
+					<!-- Tipo de proyecto -->
+
 					<li><a href="#" data-filter=".wip">Work in progress</a></li>
 					<li><a href="#" data-filter=".notcomp">Not executed</a></li>
+
 				</ul>
 			</div>
 			<div class="portfolioSort">
@@ -137,21 +147,22 @@
 				</ul>
 			</div>
 		</div>
+	</div>
 
-
 		<!--  LOS PROYECTOS VAN AQUI  -->
 		<!--  LOS PROYECTOS VAN AQUI  -->
 		<!--  LOS PROYECTOS VAN AQUI  -->
 		<!--  LOS PROYECTOS VAN AQUI  -->
 
-		<div class="portfolioContainer no-gutter">
+		<div class="portfolioContainer no-gutter" style="padding-bottom: 53px;">
+
 			<!-- Proyecto 1 -->
-			<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height">
-				<!-- Cambia el numero donde dice projects/project#.html -->
+			<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) y va al lado del container-item -->
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height pty">
+				<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
 				<a href="projects/project1.html" class="portfolio-box portfolio-link">
-					<!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
-					<img src="../img/portfolio/luxor.jpg" class="img-responsive">
+					<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+					<img src="../img/portfolio/luxor/index.jpg" class="img-responsive">
 					<div class="portfolio-box-caption">
 						<div class="portfolio-box-caption-content">
 							<!-- Categoria (Solo nombre) -->
@@ -160,24 +171,23 @@
 							</div>
 							<!-- Nombre del proyecto -->
 							<div class="project-name">
-								<span class="name">Luxor Tower</span>
+								<span class="name">LUXOR TOWER 100 y 200</span>
 							</div>
 							<!-- Ubicacion -->
 							<h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
-							<!-- Año -->
+							<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
 							<h6>Año: <span class="year">2004</span></h6>
 						</div>
 					</div>
 				</a>
 			</div>
-
 			<!-- Proyecto 2 -->
 			<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height">
-				<!-- Cambia el numero donde dice projects/project#.html -->
-				<a href="projects/project1.html" class="portfolio-box portfolio-link">
-					<!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
-					<img src="../img/portfolio/luxor.jpg" class="img-responsive">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height wip pty">
+				<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+				<a href="projects/project2.html" class="portfolio-box portfolio-link">
+					<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+					<img src="../img/portfolio/luxor300/index.jpg" class="img-responsive">
 					<div class="portfolio-box-caption">
 						<div class="portfolio-box-caption-content">
 							<!-- Categoria (Solo nombre) -->
@@ -186,24 +196,23 @@
 							</div>
 							<!-- Nombre del proyecto -->
 							<div class="project-name">
-								<span class="name">Kuxor Tower</span>
+								<span class="name">LUXOR TOWER 300</span>
 							</div>
 							<!-- Ubicacion -->
 							<h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
-							<!-- Año -->
-							<h6>Año: <span class="year">2006</span></h6>
+							<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+							<h6>Año: <span class="year">2013</span></h6>
 						</div>
 					</div>
 				</a>
 			</div>
-
-			<!-- Proyecto 2 -->
+			<!-- Proyecto 3 -->
 			<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height">
-				<!-- Cambia el numero donde dice projects/project#.html -->
-				<a href="projects/project1.html" class="portfolio-box portfolio-link">
-					<!-- Link de la imagen (Siempre mantenlo ../img/portoflio/nombre-de-la-imagen-.extension -->
-					<img src="../img/portfolio/luxor.jpg" class="img-responsive">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height pty">
+				<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+				<a href="projects/project3.html" class="portfolio-box portfolio-link">
+					<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+					<img src="../img/portfolio/oceania100/index.jpg" class="img-responsive">
 					<div class="portfolio-box-caption">
 						<div class="portfolio-box-caption-content">
 							<!-- Categoria (Solo nombre) -->
@@ -212,23 +221,44 @@
 							</div>
 							<!-- Nombre del proyecto -->
 							<div class="project-name">
-								<span class="name">Muxor Tower</span>
+								<span class="name">OCEANÍA 100</span>
 							</div>
 							<!-- Ubicacion -->
-							<h5>Ubicación: El Cangrejo, Ciudad de Panamá</h5>
-							<!-- Año -->
-							<h6>Año: <span class="year">2003</span></h6>
+							<h5>Ubicación: Plaza Edison, Ciudad de Panamá</h5>
+							<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+							<h6>Año: <span class="year">2001</span></h6>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Proyecto 4 -->
+			<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item height pty">
+				<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+				<a href="projects/project4.html" class="portfolio-box portfolio-link">
+					<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+					<img src="../img/portfolio/oceania200/index.jpg" class="img-responsive">
+					<div class="portfolio-box-caption">
+						<div class="portfolio-box-caption-content">
+							<!-- Categoria (Solo nombre) -->
+							<div class="project-category">
+								Edificios en altura
+							</div>
+							<!-- Nombre del proyecto -->
+							<div class="project-name">
+								<span class="name">OCEANÍA 200</span>
+							</div>
+							<!-- Ubicacion -->
+							<h5>Ubicación: Plaza Edison, Ciudad de Panamá</h5>
+							<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+							<h6>Año: <span class="year">2001</span></h6>
 						</div>
 					</div>
 				</a>
 			</div>
 
+			<!-- No pasarse de aquí -->
 		</div>
-
-		<!--  LOS PROYECTOS VAN AQUI  -->
-		<!--  LOS PROYECTOS VAN AQUI  -->
-		<!--  LOS PROYECTOS VAN AQUI  -->
-		<!--  LOS PROYECTOS VAN AQUI  -->
 
 		<footer class="footer" style="position: fixed;">
 			<div class="container">
