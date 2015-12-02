@@ -1,4 +1,5 @@
-$(document).ready(function () {
+// $(document).ready(function () {
+$(window).bind("load", function() {
 
 	$("a.isGoingDownType").click(function () {
 		$("#butDropDownType").dropdown("toggle");
@@ -8,12 +9,12 @@ $(document).ready(function () {
 	});
 
 	var $container = $('.portfolioContainer').isotope({
-		// resizable: true,
-		// masonry: {
-		// 	columnWidth: 0
-		// },
+		resizable: true,
+		masonry: {
+			columnWidth: 0
+		},
 		itemSelector: '.container-item',
-		layoutMode: 'fitRows',
+		layoutMode: 'masonry',
 		getSortData: {
 			name: '.name',
 			year: '.year'
@@ -34,6 +35,11 @@ $(document).ready(function () {
 		$container.isotope({
 			sortBy: selector
 		});
+	});
+
+	// Load isotope after every image has been loaded
+	$container.imagesLoaded().progress( function() {
+		$container.isotope('layout');
 	});
 
 }); // window onload

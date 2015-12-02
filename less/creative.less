@@ -241,8 +241,9 @@ header {
 // Portfolio
 .portfolio-box {
   position: relative;
-  display: block;
+  display: table;
   margin: 0 auto;
+  // max-width: 650px;
   .portfolio-box-caption {
     color: @theme-white;
     opacity: 1;
@@ -360,12 +361,6 @@ header {
 .wip {
   color: @theme-navy;
 }
-
-// .call-to-action {
-//     h2 {
-//         margin: 0 auto 20px;
-//     }
-// }
 // Bootstrap Overrides
 .text-primary {
   color: @theme-primary;
@@ -374,7 +369,6 @@ header {
   padding-right: 0;
   padding-left: 0;
 }
-
 // Button Styles
 .btn-default {
   .button-variant(@theme-dark; @theme-white; @theme-white);
