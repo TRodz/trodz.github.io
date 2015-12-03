@@ -8,10 +8,9 @@
 	});
 
 	var $container = $('.portfolioContainer').isotope({
-		resizable: true,
-		percentPosition: true,
+//		resizable: false,
 		itemSelector: '.container-item',
-		percentPosition: true,
+		// percentPosition: true,
 		layoutMode: 'masonry',
 		masonry: {
 			columnWidth: 0
