@@ -1,5 +1,4 @@
-// $(document).ready(function () {
-$(window).bind("load", function() {
+ $(document).ready(function () {
 
 	$("a.isGoingDownType").click(function () {
 		$("#butDropDownType").dropdown("toggle");
@@ -10,11 +9,13 @@ $(window).bind("load", function() {
 
 	var $container = $('.portfolioContainer').isotope({
 		resizable: true,
+		percentPosition: true,
+		itemSelector: '.container-item',
+		percentPosition: true,
+		layoutMode: 'masonry',
 		masonry: {
 			columnWidth: 0
 		},
-		itemSelector: '.container-item',
-		layoutMode: 'masonry',
 		getSortData: {
 			name: '.name',
 			year: '.year'
