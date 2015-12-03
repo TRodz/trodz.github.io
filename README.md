@@ -1,1 +1,3 @@
-### Sitio web de Humberto Echeverría y asociados
+### Humberto Echeverría & Asociados' website
+
+#### Made by [Juan Rodriguez](http://github.com/timrodz)
