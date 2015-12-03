@@ -354,6 +354,9 @@ header .header-content .header-content-inner p {
 .wip {
   color: #28779d;
 }
+.container-item {
+  margin-bottom: -1px;
+}
 .text-primary {
   color: #f07113;
 }
@@ -532,7 +535,7 @@ body {
   background-color: #222222;
   width: 100%;
   left: 0;
-  bottom: 1px;
+  bottom: 0;
   position: relative;
 }
 .thumb-box {
