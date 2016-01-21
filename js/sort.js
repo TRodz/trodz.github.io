@@ -19,6 +19,8 @@
 			year: '.year'
 		}
 	});
+	 
+	var click = 0;
 
 	$('.portfolioFilter a').click(function () {
 		$('.portfolioFilter .current').removeClass('current');
@@ -34,6 +36,13 @@
 		$container.isotope({
 			sortBy: selector
 		});
+		if (click % 2 === 0) {
+			$container.isotope({ sortAscending: true });
+		}
+		else {
+			$container.isotope({ sortAscending: false });
+		}
+		click++;
 	});
 
 	// Load isotope after every image has been loaded
