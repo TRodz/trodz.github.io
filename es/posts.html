@@ -17,12 +17,7 @@
 	<!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-	<!-- Custom Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
-
-	<!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> -->
+	<!-- font awesome -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<!-- Plugin CSS -->
@@ -34,13 +29,13 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
 </head>
 
-<body id="page-top">
+<body id="page-top" data-page="index">
 
 	<nav id="mainNav" class="navbar navbar-default dark navbar-fixed-top">
 		<div class="container-fluid">
@@ -60,28 +55,27 @@
 					</li>
 				</ul>
 			</div>
-
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a class="page-scroll" href="/index.html">Inicio</a>
+						<a href="/index.html">Inicio</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="about.html">Nosotros</a>
+						<a href="about.html">Nosotros</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="portfolio.html">Proyectos</a>
+						<a href="portfolio.html">Proyectos</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#page-top">Publicaciones</a>
+						<a href="#page-top">Publicaciones</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="contact.html">Contacto</a>
+						<a href="contact.html">Contacto</a>
 					</li>
 					<li>
-						<a href="../en/posts.html" hreflang="en">En</a>
+						<a href="../en/portfolio.html" hreflang="en">En</a>
 					</li>
 				</ul>
 			</div>
@@ -90,29 +84,131 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<!-- Las publicaciones van dentro -->
-	<div class="main-section container">
-
-		<!-- Colocar post aqui -->
-		<!-- Post -->
-		<section class="main-section" id="story">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 text-center">
-						<img class="img-responsive" src="../img/posts/1.jpg" alt="">
-						<img class="img-responsive" src="../img/posts/2.jpg" alt="">
-						<img class="img-responsive" src="../img/posts/3.jpg" alt="">
-						<img class="img-responsive" src="../img/posts/4.jpg" alt="">
-						<img class="img-responsive" src="../img/posts/5.jpg" alt="">
-					</div>
+	<!-- PORTAFOLIO -->
+	<!-- FILTROS -->
+	<div class="main-section" id="Portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">ORGANIZAR POR</h2>
+					<hr>
 				</div>
 			</div>
-		</section>
-		<!-- Fin del post -->
+			<div class="portfolioFilter">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="current">Todos</a></li>
 
+					<!-- CRONOLOGICAMENTE -->
+
+					<div class="btn-group-vertical">
+						<button type="button" class="btn-custom dropdown-toggle" id="butDropDownType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Tipo <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+
+							<!-- Tipo de proyecto -->
+
+							<li><a class="isGoingDownType" href="#" data-filter=".height">Edificios en altura</a> </li>
+							<li><a class="isGoingDownType" href="#" data-filter=".comerce">Edificios comerciales</a> </li>
+							<li><a class="isGoingDownType" href="#" data-filter=".residential">Residenciales</a> </li>
+							<li><a class="isGoingDownType" href="#" data-filter=".institutional">Institucionales</a> </li>
+							<li><a class="isGoingDownType" href="#" data-filter=".urban">Planificación urbana</a> </li>
+
+						</ul>
+					</div>
+					<div class="btn-group-vertical">
+						<button type="button" class="btn-custom dropdown-toggle" id="butDropDownReg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Región <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+
+							<!-- Tipo de proyecto -->
+
+							<li><a class="isGoingDownReg" href="#" data-filter=".pty">Ciudad de Panamá</a> </li>
+							<li><a class="isGoingDownReg" href="#" data-filter=".international">Extranjero</a> </li>
+
+						</ul>
+					</div>
+
+					<!-- Tipo de proyecto -->
+
+					<li><a href="#" data-filter=".wip">En proceso</a> </li>
+					<li><a href="#" data-filter=".notcomp">No ejecutado</a> </li>
+
+				</ul>
+			</div>
+			<div class="portfolioSort">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-sort-by="name">Nombre</a></li>
+					<li><a href="#" data-sort-by="year">Año</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /FILTROS -->
+
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+
+	<div class="portfolioContainer no-gutter">
+
+		<!-- Proyecto 1 -->
+		<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item residential international">
+			<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+			<a target="_blank" href="../img/posts/resi-coll-bravo.pdf" class="portfolio-box portfolio-link">
+				<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+				<img src="../img/portfolio/resi-coll-bravo/index.jpg" class="img-responsive">
+				<div class="portfolio-box-caption">
+					<div class="portfolio-box-caption-content">
+						<!-- Categoria (Solo nombre) -->
+						<div class="project-category">
+							Residencial
+						</div>
+						<!-- Nombre del proyecto -->
+						<div class="project-name">
+							<span class="name">RESIDENCIA COLL - BRAVO</span>
+						</div>
+						<!-- Ubicacion -->
+						<h5>Ubicación: Lima, Perú</h5>
+						<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+						<h6>Año: <span class="year">2003</span></h6>
+					</div>
+				</div>
+			</a>
+		</div>
+		<!-- Proyecto 2 -->
+		<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item institutional pty">
+			<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+			<a target="_blank" href="../img/posts/summit-golf.pdf" class="portfolio-box portfolio-link">
+				<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+				<img src="../img/portfolio/summit-golf/index.jpg" class="img-responsive">
+				<div class="portfolio-box-caption">
+					<div class="portfolio-box-caption-content">
+						<!-- Categoria (Solo nombre) -->
+						<div class="project-category">
+							Institucional
+						</div>
+						<!-- Nombre del proyecto -->
+						<div class="project-name">
+							<span class="name">SUMMIT GOLF CLUB</span>
+						</div>
+						<!-- Ubicacion -->
+						<h5>Ubicación: Áreas revertidas, Ciudad de Panamá</h5>
+						<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+						<h6>Año: <span class="year">2000</span></h6>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<!-- No pasarse de aquí -->
 	</div>
 
-
+	<!--  LOS PROYECTOS VAN ARRIBA  -->
 
 	<footer class="footer">
 		<div class="container">
@@ -145,12 +241,17 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-	<!-- Plugin JavaScript -->
+	<!-- Sorting -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="../js/isotope.min.js"></script>
+	<script type="text/javascript" src="../js/sort.js"></script>
+
+	<!-- Animations -->
 	<script src="../js/jquery.easing.min.js"></script>
 	<script src="../js/jquery.fittext.js"></script>
 	<script src="../js/wow.min.js"></script>
