@@ -22,7 +22,7 @@
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
 
-    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Plugin CSS -->
@@ -89,27 +89,138 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Las publicaciones van dentro -->
-    <div class="main-section container">
+    <!-- PORTAFOLIO -->
+	<!-- FILTROS -->
+	<div class="main-section" id="Portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">SORT BY</h2>
+					<hr>
+				</div>
+			</div>
+			<div class="portfolioFilter">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="current">All</a></li>
 
-        <!-- Colocar posts aqui -->
-        <!-- Post -->
-        <section class="main-section" id="story">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <img class="img-responsive" src="../img/posts/1.jpg" alt="">
-                        <img class="img-responsive" src="../img/posts/2.jpg" alt="">
-                        <img class="img-responsive" src="../img/posts/3.jpg" alt="">
-                        <img class="img-responsive" src="../img/posts/4.jpg" alt="">
-                        <img class="img-responsive" src="../img/posts/5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fin del post -->
+					<!-- CRONOLOGICAMENTE -->
 
-    </div>
+					<div class="btn-group-vertical">
+						<button type="button" class="btn-custom dropdown-toggle" id="butDropDownType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Type <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+
+							<!-- Tipo de proyecto -->
+
+							<li><a class="isGoingDownType" href="#" data-filter=".height">Rised buildings</a></li>
+							<li><a class="isGoingDownType" href="#" data-filter=".comerce">commercial buildings</a></li>
+							<li><a class="isGoingDownType" href="#" data-filter=".residential">Residential</a></li>
+							<li><a class="isGoingDownType" href="#" data-filter=".institutional">Institutional</a></li>
+							<li><a class="isGoingDownType" href="#" data-filter=".urban">Urban planning</a></li>
+
+						</ul>
+					</div>
+					<div class="btn-group-vertical">
+						<button type="button" class="btn-custom dropdown-toggle" id="butDropDownReg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Region <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+
+							<!-- Tipo de proyecto -->
+
+							<li><a class="isGoingDownReg" href="#" data-filter=".pty">Panama</a></li>
+							<li><a class="isGoingDownReg" href="#" data-filter=".international">International</a></li>
+
+						</ul>
+					</div>
+
+					<!-- Tipo de proyecto -->
+
+					<li><a href="#" data-filter=".wip">Work in progress</a></li>
+					<li><a href="#" data-filter=".notcomp">Not executed</a></li>
+
+				</ul>
+			</div>
+			<div class="portfolioSort">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-sort-by="name">Name</a></li>
+					<li><a href="#" data-sort-by="year">Year</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+	<!--  LOS PROYECTOS VAN ABAJO  -->
+
+	<div class="portfolioContainer no-gutter">
+        
+		<!-- Proyecto 1 -->
+		<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item residential international">
+			<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+			<a target="_blank" href="../img/posts/resi-coll-bravo.pdf" class="portfolio-box portfolio-link">
+				<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+				<img src="../img/portfolio/resi-coll-bravo/index.jpg" class="img-responsive">
+				<div class="portfolio-box-caption">
+					<div class="portfolio-box-caption-content">
+						<!-- Nombre del proyecto -->
+						<div class="project-name">
+							<span class="name">COLL - BRAVO RESIDENCE</span>
+						</div>
+						<!-- Nombre de publicacion -->
+                        <div>
+                            Volumetría Distintiva : A-15
+                        </div>
+                        <!-- Nombre de autor -->
+                        <div>
+                            
+                        </div>
+                        <!-- Nombre de revista/libro -->
+                        <div>
+                            
+                        </div>
+						<!-- Ubicacion -->
+						<h5>Location: Lima, Perú</h5>
+						<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+						<h6>Year: <span class="year">2003</span></h6>
+					</div>
+				</div>
+			</a>
+		</div>
+        <!-- Proyecto 2 -->
+		<!-- Al lado de Portfolio-box va la categoria para el SORTING (Pueden ser mas de una) -->
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 container-item institutional pty">
+			<!-- Cambiar el numero donde dice projects/project#.html (#: numero) -->
+			<a href="projects/project_summit-golf.html" class="portfolio-box portfolio-link">
+				<!-- Link de la imagen (El formato es: ../img/portoflio/nombre-de-la-imagen-.extension -->
+				<img src="../img/portfolio/summit-golf/index.jpg" class="img-responsive">
+				<div class="portfolio-box-caption">
+					<div class="portfolio-box-caption-content">
+						<!-- Nombre del proyecto -->
+						<div class="project-name">
+							<span class="name">SUMMIT GOLF CLUB</span>
+						</div>
+						<!-- Nombre de publicacion -->
+                        <div>
+                            Blueprints
+                        </div>
+						<!-- Ubicacion -->
+						<h5>Location: Áreas revertidas, Panama City</h5>
+						<!-- Año, se cambia lo que esta entre <span class="year"></span> -->
+						<h6>Year: <span class="year">2000</span></h6>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<!-- No pasarse de aquí -->
+	</div>
+
+	<!--  LOS PROYECTOS VAN ARRIBA  -->
 
     <footer class="footer">
 		<div class="container">
@@ -146,6 +257,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <!-- Sorting -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="../js/isotope.min.js"></script>
+	<script type="text/javascript" src="../js/sort.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="../js/jquery.easing.min.js"></script>
